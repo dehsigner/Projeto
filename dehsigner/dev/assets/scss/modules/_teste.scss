@@ -1,0 +1,19 @@
+/* modules/teste
+--------------------------------------*/
+
+.border-radius {
+	@include border-radius(15px);
+	background: red;
+}
+
+.box {
+	@extend .border-radius;
+	@include size(200px, 600px);
+	padding: 10px;
+	background: #ccc;
+
+	p {
+		margin: 0;
+	}
+
+}
